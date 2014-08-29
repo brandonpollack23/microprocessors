@@ -1,0 +1,61 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.51</VERSION>
+ <DEVICE>"ATxmega128A1U"</DEVICE>
+ <WORKING_DIR>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.46\AvrAssembler/Include</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.46\AvrAssembler/Include\atxmega128a1udef.inc</FILE>
+  <FILE>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.46\AvrAssembler/Include\Atxmega128A1udef.inc</FILE>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\EBI_INITS.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Debug/Lab6_Part3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Debug/Lab6_Part3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Debug\Lab6_Part3.map</FILE>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Debug\Lab6_Part3.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <main><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>16</LINE></main>
+  <LCD_BF_WAIT><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>260</LINE></LCD_BF_WAIT>
+  <loop><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>29</LINE></loop>
+  <DELAY500><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>353</LINE></DELAY500>
+  <nochangesinbuttons><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>38</LINE></nochangesinbuttons>
+  <GETKEYPAD><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>74</LINE></GETKEYPAD>
+  <ZERO0><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>53</LINE></ZERO0>
+  <ONE1><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>55</LINE></ONE1>
+  <TWO2><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>57</LINE></TWO2>
+  <THREE3><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>59</LINE></THREE3>
+  <FOUR4><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>61</LINE></FOUR4>
+  <ZERO><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>154</LINE></ZERO>
+  <ONE><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>168</LINE></ONE>
+  <TWO><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>174</LINE></TWO>
+  <THREE><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>225</LINE></THREE>
+  <FOUR><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>231</LINE></FOUR>
+  <LUT><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>67</LINE></LUT>
+  <SchwartzLocation><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>69</LINE></SchwartzLocation>
+  <CreativityLocation><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>71</LINE></CreativityLocation>
+  <OUT_STRING_LCD><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>244</LINE></OUT_STRING_LCD>
+  <OUT_CHAR_LCD><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>237</LINE></OUT_CHAR_LCD>
+  <OUT_HEX><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>311</LINE></OUT_HEX>
+  <stringloop><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>247</LINE></stringloop>
+  <string_done><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>256</LINE></string_done>
+  <AGAINLCD><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>277</LINE></AGAINLCD>
+  <CARRYLCD><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>302</LINE></CARRYLCD>
+  <BACKLCD><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>297</LINE></BACKLCD>
+  <RETURNLCD><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>306</LINE></RETURNLCD>
+  <Letter><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>338</LINE></Letter>
+  <continue><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>327</LINE></continue>
+  <Letter20><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>345</LINE></Letter20>
+  <AGAIN><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>360</LINE></AGAIN>
+  <CARRY><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>385</LINE></CARRY>
+  <BACK><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>380</LINE></BACK>
+  <RETURN><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\Lab6_Part3\Lab6_Part3\Lab6_Part3.asm</FILE><LINE>389</LINE></RETURN>
+ </LABELS>
+</ASSEMBLER_INFO>

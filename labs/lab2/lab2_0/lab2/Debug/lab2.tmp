@@ -1,0 +1,27 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.51</VERSION>
+ <DEVICE>"ATxmega128A1U"</DEVICE>
+ <WORKING_DIR>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\lab2_0\lab2\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.46\AvrAssembler/Include</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\lab2_0\lab2\lab2.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.46\AvrAssembler/Include\atxmega128a1udef.inc</FILE>
+  <FILE>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.46\AvrAssembler/Include\ATxmega128A1Udef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\lab2_0\lab2\Debug/lab2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\lab2_0\lab2\Debug/lab2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\lab2_0\lab2\Debug\lab2.map</FILE>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\lab2_0\lab2\Debug\lab2.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <MAIN><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\lab2_0\lab2\lab2.asm</FILE><LINE>11</LINE></MAIN>
+  <LOOP><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\lab2_0\lab2\lab2.asm</FILE><LINE>19</LINE></LOOP>
+ </LABELS>
+</ASSEMBLER_INFO>

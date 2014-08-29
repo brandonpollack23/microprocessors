@@ -1,0 +1,772 @@
+
+Lab3_c.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000005b8  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .stab         00000714  00000000  00000000  0000060c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  2 .stabstr      00000085  00000000  00000000  00000d20  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_aranges 000000a0  00000000  00000000  00000da8  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   00000e54  00000000  00000000  00000e48  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 00000262  00000000  00000000  00001c9c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   00000501  00000000  00000000  00001efe  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  00000110  00000000  00000000  00002400  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    00000b1a  00000000  00000000  00002510  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    000001e4  00000000  00000000  0000302a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 fe 00 	jmp	0x1fc	; 0x1fc <__ctors_end>
+   4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+   8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+   c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  10:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  14:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  18:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  1c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  20:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  24:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  28:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  2c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  30:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  34:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  38:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  3c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  40:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  44:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  48:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  4c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  50:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  54:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  58:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  5c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  60:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  64:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  68:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  6c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  70:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  74:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  78:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  7c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  80:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  84:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  88:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  8c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  90:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  94:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  98:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  9c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  a0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  a4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  a8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  ac:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  b0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  b4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  b8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  bc:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  c0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  c4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  c8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  cc:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  d0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  d4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  d8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  dc:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  e0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  e4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  e8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  ec:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  f0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  f4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  f8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  fc:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 100:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 104:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 108:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 10c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 110:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 114:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 118:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 11c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 120:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 124:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 128:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 12c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 130:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 134:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 138:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 13c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 140:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 144:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 148:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 14c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 150:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 154:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 158:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 15c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 160:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 164:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 168:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 16c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 170:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 174:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 178:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 17c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 180:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 184:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 188:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 18c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 190:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 194:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 198:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 19c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1a0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1a4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1a8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1ac:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1b0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1b4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1b8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1bc:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1c0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1c4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1c8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1cc:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1d0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1d4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1d8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1dc:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1e0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1e4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1e8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1ec:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1f0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1f4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1f8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+
+000001fc <__ctors_end>:
+ 1fc:	11 24       	eor	r1, r1
+ 1fe:	1f be       	out	0x3f, r1	; 63
+ 200:	cf ef       	ldi	r28, 0xFF	; 255
+ 202:	df e3       	ldi	r29, 0x3F	; 63
+ 204:	de bf       	out	0x3e, r29	; 62
+ 206:	cd bf       	out	0x3d, r28	; 61
+ 208:	00 e0       	ldi	r16, 0x00	; 0
+ 20a:	0c bf       	out	0x3c, r16	; 60
+ 20c:	18 be       	out	0x38, r1	; 56
+ 20e:	19 be       	out	0x39, r1	; 57
+ 210:	1a be       	out	0x3a, r1	; 58
+ 212:	1b be       	out	0x3b, r1	; 59
+
+00000214 <__do_copy_data>:
+ 214:	10 e2       	ldi	r17, 0x20	; 32
+ 216:	a0 e0       	ldi	r26, 0x00	; 0
+ 218:	b0 e2       	ldi	r27, 0x20	; 32
+ 21a:	e8 eb       	ldi	r30, 0xB8	; 184
+ 21c:	f5 e0       	ldi	r31, 0x05	; 5
+ 21e:	00 e0       	ldi	r16, 0x00	; 0
+ 220:	0b bf       	out	0x3b, r16	; 59
+ 222:	02 c0       	rjmp	.+4      	; 0x228 <__do_copy_data+0x14>
+ 224:	07 90       	elpm	r0, Z+
+ 226:	0d 92       	st	X+, r0
+ 228:	a0 30       	cpi	r26, 0x00	; 0
+ 22a:	b1 07       	cpc	r27, r17
+ 22c:	d9 f7       	brne	.-10     	; 0x224 <__do_copy_data+0x10>
+
+0000022e <__do_clear_bss>:
+ 22e:	10 e2       	ldi	r17, 0x20	; 32
+ 230:	a0 e0       	ldi	r26, 0x00	; 0
+ 232:	b0 e2       	ldi	r27, 0x20	; 32
+ 234:	01 c0       	rjmp	.+2      	; 0x238 <.do_clear_bss_start>
+
+00000236 <.do_clear_bss_loop>:
+ 236:	1d 92       	st	X+, r1
+
+00000238 <.do_clear_bss_start>:
+ 238:	a0 30       	cpi	r26, 0x00	; 0
+ 23a:	b1 07       	cpc	r27, r17
+ 23c:	e1 f7       	brne	.-8      	; 0x236 <.do_clear_bss_loop>
+ 23e:	0e 94 78 02 	call	0x4f0	; 0x4f0 <main>
+ 242:	0c 94 da 02 	jmp	0x5b4	; 0x5b4 <_exit>
+
+00000246 <__bad_interrupt>:
+ 246:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000024a <EBI_Enable>:
+ */
+void EBI_Enable( EBI_SDDATAW_t sdramDataWidth,
+                 EBI_LPCMODE_t lpcMode,
+                 EBI_SRMODE_t sramMode,
+                 EBI_IFMODE_t interfaceMode )
+{
+ 24a:	cf 93       	push	r28
+ 24c:	df 93       	push	r29
+ 24e:	00 d0       	rcall	.+0      	; 0x250 <EBI_Enable+0x6>
+ 250:	0f 92       	push	r0
+ 252:	cd b7       	in	r28, 0x3d	; 61
+ 254:	de b7       	in	r29, 0x3e	; 62
+ 256:	89 83       	std	Y+1, r24	; 0x01
+ 258:	6a 83       	std	Y+2, r22	; 0x02
+ 25a:	4b 83       	std	Y+3, r20	; 0x03
+ 25c:	2c 83       	std	Y+4, r18	; 0x04
+	/* These fields fill up the whole register, so we don't have to protect any bits with masks. */
+	EBI.CTRL = (uint8_t) sdramDataWidth | lpcMode | sramMode | interfaceMode;
+ 25e:	80 e4       	ldi	r24, 0x40	; 64
+ 260:	94 e0       	ldi	r25, 0x04	; 4
+ 262:	39 81       	ldd	r19, Y+1	; 0x01
+ 264:	2a 81       	ldd	r18, Y+2	; 0x02
+ 266:	32 2b       	or	r19, r18
+ 268:	2b 81       	ldd	r18, Y+3	; 0x03
+ 26a:	32 2b       	or	r19, r18
+ 26c:	2c 81       	ldd	r18, Y+4	; 0x04
+ 26e:	23 2b       	or	r18, r19
+ 270:	fc 01       	movw	r30, r24
+ 272:	20 83       	st	Z, r18
+}
+ 274:	24 96       	adiw	r28, 0x04	; 4
+ 276:	cd bf       	out	0x3d, r28	; 61
+ 278:	de bf       	out	0x3e, r29	; 62
+ 27a:	df 91       	pop	r29
+ 27c:	cf 91       	pop	r28
+ 27e:	08 95       	ret
+
+00000280 <EBI_EnableSRAM>:
+ */
+void EBI_EnableSRAM( volatile EBI_CS_t * chipSelect,
+                     EBI_CS_ASPACE_t addrSpace,
+                     uint32_t baseAddr,
+                     uint8_t waitStateCycles )
+{
+ 280:	0f 93       	push	r16
+ 282:	cf 93       	push	r28
+ 284:	df 93       	push	r29
+ 286:	cd b7       	in	r28, 0x3d	; 61
+ 288:	de b7       	in	r29, 0x3e	; 62
+ 28a:	28 97       	sbiw	r28, 0x08	; 8
+ 28c:	cd bf       	out	0x3d, r28	; 61
+ 28e:	de bf       	out	0x3e, r29	; 62
+ 290:	89 83       	std	Y+1, r24	; 0x01
+ 292:	9a 83       	std	Y+2, r25	; 0x02
+ 294:	6b 83       	std	Y+3, r22	; 0x03
+ 296:	2c 83       	std	Y+4, r18	; 0x04
+ 298:	3d 83       	std	Y+5, r19	; 0x05
+ 29a:	4e 83       	std	Y+6, r20	; 0x06
+ 29c:	5f 83       	std	Y+7, r21	; 0x07
+ 29e:	08 87       	std	Y+8, r16	; 0x08
+	/* Configure SRAM settings. */
+	chipSelect->CTRLB = (chipSelect->CTRLB & ~EBI_CS_SRWS_gm) |
+ 2a0:	89 81       	ldd	r24, Y+1	; 0x01
+ 2a2:	9a 81       	ldd	r25, Y+2	; 0x02
+ 2a4:	fc 01       	movw	r30, r24
+ 2a6:	81 81       	ldd	r24, Z+1	; 0x01
+ 2a8:	98 2f       	mov	r25, r24
+ 2aa:	98 7f       	andi	r25, 0xF8	; 248
+ 2ac:	88 85       	ldd	r24, Y+8	; 0x08
+ 2ae:	87 70       	andi	r24, 0x07	; 7
+ 2b0:	89 2b       	or	r24, r25
+ 2b2:	28 2f       	mov	r18, r24
+ 2b4:	89 81       	ldd	r24, Y+1	; 0x01
+ 2b6:	9a 81       	ldd	r25, Y+2	; 0x02
+ 2b8:	fc 01       	movw	r30, r24
+ 2ba:	21 83       	std	Z+1, r18	; 0x01
+	                    (waitStateCycles & EBI_CS_SRWS_gm); /* Truncate too large values. */
+
+	/* Truncate the base address to an address space boundary. */
+	chipSelect->BASEADDR = (((uint32_t) baseAddr)>>8) & (0xFFFF<<(addrSpace>>2));
+ 2bc:	8c 81       	ldd	r24, Y+4	; 0x04
+ 2be:	9d 81       	ldd	r25, Y+5	; 0x05
+ 2c0:	ae 81       	ldd	r26, Y+6	; 0x06
+ 2c2:	bf 81       	ldd	r27, Y+7	; 0x07
+ 2c4:	89 2f       	mov	r24, r25
+ 2c6:	9a 2f       	mov	r25, r26
+ 2c8:	ab 2f       	mov	r26, r27
+ 2ca:	bb 27       	eor	r27, r27
+ 2cc:	9c 01       	movw	r18, r24
+ 2ce:	8b 81       	ldd	r24, Y+3	; 0x03
+ 2d0:	86 95       	lsr	r24
+ 2d2:	86 95       	lsr	r24
+ 2d4:	48 2f       	mov	r20, r24
+ 2d6:	50 e0       	ldi	r21, 0x00	; 0
+ 2d8:	8f ef       	ldi	r24, 0xFF	; 255
+ 2da:	9f ef       	ldi	r25, 0xFF	; 255
+ 2dc:	04 2e       	mov	r0, r20
+ 2de:	02 c0       	rjmp	.+4      	; 0x2e4 <EBI_EnableSRAM+0x64>
+ 2e0:	88 0f       	add	r24, r24
+ 2e2:	99 1f       	adc	r25, r25
+ 2e4:	0a 94       	dec	r0
+ 2e6:	e2 f7       	brpl	.-8      	; 0x2e0 <EBI_EnableSRAM+0x60>
+ 2e8:	28 23       	and	r18, r24
+ 2ea:	39 23       	and	r19, r25
+ 2ec:	89 81       	ldd	r24, Y+1	; 0x01
+ 2ee:	9a 81       	ldd	r25, Y+2	; 0x02
+ 2f0:	fc 01       	movw	r30, r24
+ 2f2:	22 83       	std	Z+2, r18	; 0x02
+ 2f4:	33 83       	std	Z+3, r19	; 0x03
+
+	/* Last part of configuration and then enable Chip Select module in SRAM mode. */
+	chipSelect->CTRLA = (chipSelect->CTRLA & ~(EBI_CS_ASPACE_gm | EBI_CS_MODE_gm)) |
+ 2f6:	89 81       	ldd	r24, Y+1	; 0x01
+ 2f8:	9a 81       	ldd	r25, Y+2	; 0x02
+ 2fa:	fc 01       	movw	r30, r24
+ 2fc:	80 81       	ld	r24, Z
+ 2fe:	98 2f       	mov	r25, r24
+ 300:	90 78       	andi	r25, 0x80	; 128
+ 302:	8b 81       	ldd	r24, Y+3	; 0x03
+ 304:	89 2b       	or	r24, r25
+ 306:	81 60       	ori	r24, 0x01	; 1
+ 308:	28 2f       	mov	r18, r24
+ 30a:	89 81       	ldd	r24, Y+1	; 0x01
+ 30c:	9a 81       	ldd	r25, Y+2	; 0x02
+ 30e:	fc 01       	movw	r30, r24
+ 310:	20 83       	st	Z, r18
+	                    addrSpace | EBI_CS_MODE_SRAM_gc;
+}
+ 312:	28 96       	adiw	r28, 0x08	; 8
+ 314:	cd bf       	out	0x3d, r28	; 61
+ 316:	de bf       	out	0x3e, r29	; 62
+ 318:	df 91       	pop	r29
+ 31a:	cf 91       	pop	r28
+ 31c:	0f 91       	pop	r16
+ 31e:	08 95       	ret
+
+00000320 <EBI_EnableLPC>:
+ */
+void EBI_EnableLPC( volatile EBI_CS_t * chipSelect,
+                    EBI_CS_ASPACE_t addrSpace,
+                    uint32_t baseAddr,
+                    uint8_t waitStateCycles )
+{
+ 320:	0f 93       	push	r16
+ 322:	cf 93       	push	r28
+ 324:	df 93       	push	r29
+ 326:	cd b7       	in	r28, 0x3d	; 61
+ 328:	de b7       	in	r29, 0x3e	; 62
+ 32a:	28 97       	sbiw	r28, 0x08	; 8
+ 32c:	cd bf       	out	0x3d, r28	; 61
+ 32e:	de bf       	out	0x3e, r29	; 62
+ 330:	89 83       	std	Y+1, r24	; 0x01
+ 332:	9a 83       	std	Y+2, r25	; 0x02
+ 334:	6b 83       	std	Y+3, r22	; 0x03
+ 336:	2c 83       	std	Y+4, r18	; 0x04
+ 338:	3d 83       	std	Y+5, r19	; 0x05
+ 33a:	4e 83       	std	Y+6, r20	; 0x06
+ 33c:	5f 83       	std	Y+7, r21	; 0x07
+ 33e:	08 87       	std	Y+8, r16	; 0x08
+	/* Configure SRAM LPC settings. */
+	chipSelect->CTRLB = (chipSelect->CTRLB & ~EBI_CS_SRWS_gm) |
+ 340:	89 81       	ldd	r24, Y+1	; 0x01
+ 342:	9a 81       	ldd	r25, Y+2	; 0x02
+ 344:	fc 01       	movw	r30, r24
+ 346:	81 81       	ldd	r24, Z+1	; 0x01
+ 348:	98 2f       	mov	r25, r24
+ 34a:	98 7f       	andi	r25, 0xF8	; 248
+ 34c:	88 85       	ldd	r24, Y+8	; 0x08
+ 34e:	87 70       	andi	r24, 0x07	; 7
+ 350:	89 2b       	or	r24, r25
+ 352:	28 2f       	mov	r18, r24
+ 354:	89 81       	ldd	r24, Y+1	; 0x01
+ 356:	9a 81       	ldd	r25, Y+2	; 0x02
+ 358:	fc 01       	movw	r30, r24
+ 35a:	21 83       	std	Z+1, r18	; 0x01
+	                    (waitStateCycles & EBI_CS_SRWS_gm); /* Truncate too large values. */
+
+	/* Truncate the base address to an address space boundary. */
+	chipSelect->BASEADDR = (((uint32_t) baseAddr)>>8) & (0xFFFF<<(addrSpace>>2));
+ 35c:	8c 81       	ldd	r24, Y+4	; 0x04
+ 35e:	9d 81       	ldd	r25, Y+5	; 0x05
+ 360:	ae 81       	ldd	r26, Y+6	; 0x06
+ 362:	bf 81       	ldd	r27, Y+7	; 0x07
+ 364:	89 2f       	mov	r24, r25
+ 366:	9a 2f       	mov	r25, r26
+ 368:	ab 2f       	mov	r26, r27
+ 36a:	bb 27       	eor	r27, r27
+ 36c:	9c 01       	movw	r18, r24
+ 36e:	8b 81       	ldd	r24, Y+3	; 0x03
+ 370:	86 95       	lsr	r24
+ 372:	86 95       	lsr	r24
+ 374:	48 2f       	mov	r20, r24
+ 376:	50 e0       	ldi	r21, 0x00	; 0
+ 378:	8f ef       	ldi	r24, 0xFF	; 255
+ 37a:	9f ef       	ldi	r25, 0xFF	; 255
+ 37c:	04 2e       	mov	r0, r20
+ 37e:	02 c0       	rjmp	.+4      	; 0x384 <EBI_EnableLPC+0x64>
+ 380:	88 0f       	add	r24, r24
+ 382:	99 1f       	adc	r25, r25
+ 384:	0a 94       	dec	r0
+ 386:	e2 f7       	brpl	.-8      	; 0x380 <EBI_EnableLPC+0x60>
+ 388:	28 23       	and	r18, r24
+ 38a:	39 23       	and	r19, r25
+ 38c:	89 81       	ldd	r24, Y+1	; 0x01
+ 38e:	9a 81       	ldd	r25, Y+2	; 0x02
+ 390:	fc 01       	movw	r30, r24
+ 392:	22 83       	std	Z+2, r18	; 0x02
+ 394:	33 83       	std	Z+3, r19	; 0x03
+
+	/* Last part of configuration and then enable Chip Select module in SRAM LPC mode. */
+	chipSelect->CTRLA = (chipSelect->CTRLA & ~(EBI_CS_ASPACE_gm | EBI_CS_MODE_gm)) |
+ 396:	89 81       	ldd	r24, Y+1	; 0x01
+ 398:	9a 81       	ldd	r25, Y+2	; 0x02
+ 39a:	fc 01       	movw	r30, r24
+ 39c:	80 81       	ld	r24, Z
+ 39e:	98 2f       	mov	r25, r24
+ 3a0:	90 78       	andi	r25, 0x80	; 128
+ 3a2:	8b 81       	ldd	r24, Y+3	; 0x03
+ 3a4:	89 2b       	or	r24, r25
+ 3a6:	82 60       	ori	r24, 0x02	; 2
+ 3a8:	28 2f       	mov	r18, r24
+ 3aa:	89 81       	ldd	r24, Y+1	; 0x01
+ 3ac:	9a 81       	ldd	r25, Y+2	; 0x02
+ 3ae:	fc 01       	movw	r30, r24
+ 3b0:	20 83       	st	Z, r18
+	                    addrSpace | EBI_CS_MODE_LPC_gc;
+}
+ 3b2:	28 96       	adiw	r28, 0x08	; 8
+ 3b4:	cd bf       	out	0x3d, r28	; 61
+ 3b6:	de bf       	out	0x3e, r29	; 62
+ 3b8:	df 91       	pop	r29
+ 3ba:	cf 91       	pop	r28
+ 3bc:	0f 91       	pop	r16
+ 3be:	08 95       	ret
+
+000003c0 <EBI_EnableSDRAM>:
+                      EBI_WRDLY_t writeRecoveryDelay,
+                      EBI_ESRDLY_t exitSelfRefreshToActiveDelay,
+                      EBI_ROWCOLDLY_t rowToColumnDelay,
+                      uint16_t refreshPeriod,
+                      uint16_t initializationDelay )
+{
+ 3c0:	8f 92       	push	r8
+ 3c2:	af 92       	push	r10
+ 3c4:	cf 92       	push	r12
+ 3c6:	ef 92       	push	r14
+ 3c8:	0f 93       	push	r16
+ 3ca:	cf 93       	push	r28
+ 3cc:	df 93       	push	r29
+ 3ce:	cd b7       	in	r28, 0x3d	; 61
+ 3d0:	de b7       	in	r29, 0x3e	; 62
+ 3d2:	2b 97       	sbiw	r28, 0x0b	; 11
+ 3d4:	cd bf       	out	0x3d, r28	; 61
+ 3d6:	de bf       	out	0x3e, r29	; 62
+ 3d8:	89 83       	std	Y+1, r24	; 0x01
+ 3da:	4a 83       	std	Y+2, r20	; 0x02
+ 3dc:	5b 83       	std	Y+3, r21	; 0x03
+ 3de:	6c 83       	std	Y+4, r22	; 0x04
+ 3e0:	7d 83       	std	Y+5, r23	; 0x05
+ 3e2:	2e 83       	std	Y+6, r18	; 0x06
+ 3e4:	0f 83       	std	Y+7, r16	; 0x07
+ 3e6:	e8 86       	std	Y+8, r14	; 0x08
+ 3e8:	c9 86       	std	Y+9, r12	; 0x09
+ 3ea:	aa 86       	std	Y+10, r10	; 0x0a
+ 3ec:	8b 86       	std	Y+11, r8	; 0x0b
+	/* Set two single-bit fields and one larger field, while protecting reserved bits. */
+	EBI.SDRAMCTRLA = (EBI.SDRAMCTRLA & ~(EBI_SDCAS_bm | EBI_SDROW_bm | EBI_SDCOL_gm)) |
+ 3ee:	80 e4       	ldi	r24, 0x40	; 64
+ 3f0:	94 e0       	ldi	r25, 0x04	; 4
+ 3f2:	20 e4       	ldi	r18, 0x40	; 64
+ 3f4:	34 e0       	ldi	r19, 0x04	; 4
+ 3f6:	f9 01       	movw	r30, r18
+ 3f8:	21 81       	ldd	r18, Z+1	; 0x01
+ 3fa:	32 2f       	mov	r19, r18
+ 3fc:	30 7f       	andi	r19, 0xF0	; 240
+ 3fe:	2e 81       	ldd	r18, Y+6	; 0x06
+ 400:	22 23       	and	r18, r18
+ 402:	11 f0       	breq	.+4      	; 0x408 <EBI_EnableSDRAM+0x48>
+ 404:	28 e0       	ldi	r18, 0x08	; 8
+ 406:	01 c0       	rjmp	.+2      	; 0x40a <EBI_EnableSDRAM+0x4a>
+ 408:	20 e0       	ldi	r18, 0x00	; 0
+ 40a:	32 2b       	or	r19, r18
+ 40c:	2f 81       	ldd	r18, Y+7	; 0x07
+ 40e:	22 23       	and	r18, r18
+ 410:	11 f0       	breq	.+4      	; 0x416 <EBI_EnableSDRAM+0x56>
+ 412:	24 e0       	ldi	r18, 0x04	; 4
+ 414:	01 c0       	rjmp	.+2      	; 0x418 <EBI_EnableSDRAM+0x58>
+ 416:	20 e0       	ldi	r18, 0x00	; 0
+ 418:	32 2b       	or	r19, r18
+ 41a:	28 85       	ldd	r18, Y+8	; 0x08
+ 41c:	23 2b       	or	r18, r19
+ 41e:	fc 01       	movw	r30, r24
+ 420:	21 83       	std	Z+1, r18	; 0x01
+	                 (casLatency ? EBI_SDCAS_bm : 0) | (rowBits ? EBI_SDROW_bm : 0) | columnBits;
+
+	/* Set delay counts. Fields fill up the entire registers. */
+	EBI.SDRAMCTRLB = (uint8_t) modeRegisterDelay | rowCycleDelay | rowToPrechargeDelay;
+ 422:	80 e4       	ldi	r24, 0x40	; 64
+ 424:	94 e0       	ldi	r25, 0x04	; 4
+ 426:	39 85       	ldd	r19, Y+9	; 0x09
+ 428:	2a 85       	ldd	r18, Y+10	; 0x0a
+ 42a:	32 2b       	or	r19, r18
+ 42c:	2b 85       	ldd	r18, Y+11	; 0x0b
+ 42e:	23 2b       	or	r18, r19
+ 430:	fc 01       	movw	r30, r24
+ 432:	20 87       	std	Z+8, r18	; 0x08
+	EBI.SDRAMCTRLC = (uint8_t) writeRecoveryDelay | exitSelfRefreshToActiveDelay | rowToColumnDelay;
+ 434:	80 e4       	ldi	r24, 0x40	; 64
+ 436:	94 e0       	ldi	r25, 0x04	; 4
+ 438:	3e 89       	ldd	r19, Y+22	; 0x16
+ 43a:	2f 89       	ldd	r18, Y+23	; 0x17
+ 43c:	32 2b       	or	r19, r18
+ 43e:	28 8d       	ldd	r18, Y+24	; 0x18
+ 440:	23 2b       	or	r18, r19
+ 442:	fc 01       	movw	r30, r24
+ 444:	21 87       	std	Z+9, r18	; 0x09
+
+	/* Set refresh period and initialization delay, truncate too large values. */
+	EBI.REFRESH = refreshPeriod & 0x03FF;
+ 446:	80 e4       	ldi	r24, 0x40	; 64
+ 448:	94 e0       	ldi	r25, 0x04	; 4
+ 44a:	29 8d       	ldd	r18, Y+25	; 0x19
+ 44c:	3a 8d       	ldd	r19, Y+26	; 0x1a
+ 44e:	33 70       	andi	r19, 0x03	; 3
+ 450:	fc 01       	movw	r30, r24
+ 452:	24 83       	std	Z+4, r18	; 0x04
+ 454:	35 83       	std	Z+5, r19	; 0x05
+	EBI.INITDLY = initializationDelay & 0x3FFF;
+ 456:	80 e4       	ldi	r24, 0x40	; 64
+ 458:	94 e0       	ldi	r25, 0x04	; 4
+ 45a:	2b 8d       	ldd	r18, Y+27	; 0x1b
+ 45c:	3c 8d       	ldd	r19, Y+28	; 0x1c
+ 45e:	3f 73       	andi	r19, 0x3F	; 63
+ 460:	fc 01       	movw	r30, r24
+ 462:	26 83       	std	Z+6, r18	; 0x06
+ 464:	37 83       	std	Z+7, r19	; 0x07
+
+	/* Last part of configuration and then enable Chip Select module in SDRAM mode. */
+	EBI.CS3.CTRLB = (EBI.CS3.CTRLB & ~(EBI_CS_SDSREN_bm | EBI_CS_SDMODE_gm)) |
+ 466:	80 e4       	ldi	r24, 0x40	; 64
+ 468:	94 e0       	ldi	r25, 0x04	; 4
+ 46a:	20 e4       	ldi	r18, 0x40	; 64
+ 46c:	34 e0       	ldi	r19, 0x04	; 4
+ 46e:	f9 01       	movw	r30, r18
+ 470:	25 8d       	ldd	r18, Z+29	; 0x1d
+ 472:	28 7f       	andi	r18, 0xF8	; 248
+ 474:	fc 01       	movw	r30, r24
+ 476:	25 8f       	std	Z+29, r18	; 0x1d
+	                EBI_CS_SDMODE_NORMAL_gc;
+
+	/* Truncate the base address to an address space boundary. */
+	EBI.CS3.BASEADDR = (((uint32_t) baseAddr)>>8) & (0xFFFF<<(addrSpace>>2));
+ 478:	20 e4       	ldi	r18, 0x40	; 64
+ 47a:	34 e0       	ldi	r19, 0x04	; 4
+ 47c:	8a 81       	ldd	r24, Y+2	; 0x02
+ 47e:	9b 81       	ldd	r25, Y+3	; 0x03
+ 480:	ac 81       	ldd	r26, Y+4	; 0x04
+ 482:	bd 81       	ldd	r27, Y+5	; 0x05
+ 484:	89 2f       	mov	r24, r25
+ 486:	9a 2f       	mov	r25, r26
+ 488:	ab 2f       	mov	r26, r27
+ 48a:	bb 27       	eor	r27, r27
+ 48c:	ac 01       	movw	r20, r24
+ 48e:	89 81       	ldd	r24, Y+1	; 0x01
+ 490:	86 95       	lsr	r24
+ 492:	86 95       	lsr	r24
+ 494:	68 2f       	mov	r22, r24
+ 496:	70 e0       	ldi	r23, 0x00	; 0
+ 498:	8f ef       	ldi	r24, 0xFF	; 255
+ 49a:	9f ef       	ldi	r25, 0xFF	; 255
+ 49c:	06 2e       	mov	r0, r22
+ 49e:	02 c0       	rjmp	.+4      	; 0x4a4 <EBI_EnableSDRAM+0xe4>
+ 4a0:	88 0f       	add	r24, r24
+ 4a2:	99 1f       	adc	r25, r25
+ 4a4:	0a 94       	dec	r0
+ 4a6:	e2 f7       	brpl	.-8      	; 0x4a0 <EBI_EnableSDRAM+0xe0>
+ 4a8:	84 23       	and	r24, r20
+ 4aa:	95 23       	and	r25, r21
+ 4ac:	f9 01       	movw	r30, r18
+ 4ae:	86 8f       	std	Z+30, r24	; 0x1e
+ 4b0:	97 8f       	std	Z+31, r25	; 0x1f
+
+	EBI.CS3.CTRLA = (EBI.CS3.CTRLA & ~(EBI_CS_ASPACE_gm | EBI_CS_MODE_gm)) |
+ 4b2:	80 e4       	ldi	r24, 0x40	; 64
+ 4b4:	94 e0       	ldi	r25, 0x04	; 4
+ 4b6:	20 e4       	ldi	r18, 0x40	; 64
+ 4b8:	34 e0       	ldi	r19, 0x04	; 4
+ 4ba:	f9 01       	movw	r30, r18
+ 4bc:	24 8d       	ldd	r18, Z+28	; 0x1c
+ 4be:	32 2f       	mov	r19, r18
+ 4c0:	30 78       	andi	r19, 0x80	; 128
+ 4c2:	29 81       	ldd	r18, Y+1	; 0x01
+ 4c4:	23 2b       	or	r18, r19
+ 4c6:	23 60       	ori	r18, 0x03	; 3
+ 4c8:	fc 01       	movw	r30, r24
+ 4ca:	24 8f       	std	Z+28, r18	; 0x1c
+	                addrSpace | EBI_CS_MODE_SDRAM_gc;
+
+	/* Wait for SDRAM to initialize. */
+	while ((EBI.CS3.CTRLB & EBI_CS_SDINITDONE_bm) == 0){
+ 4cc:	00 00       	nop
+ 4ce:	80 e4       	ldi	r24, 0x40	; 64
+ 4d0:	94 e0       	ldi	r25, 0x04	; 4
+ 4d2:	fc 01       	movw	r30, r24
+ 4d4:	85 8d       	ldd	r24, Z+29	; 0x1d
+ 4d6:	88 23       	and	r24, r24
+ 4d8:	d4 f7       	brge	.-12     	; 0x4ce <EBI_EnableSDRAM+0x10e>
+
+	}
+}
+ 4da:	2b 96       	adiw	r28, 0x0b	; 11
+ 4dc:	cd bf       	out	0x3d, r28	; 61
+ 4de:	de bf       	out	0x3e, r29	; 62
+ 4e0:	df 91       	pop	r29
+ 4e2:	cf 91       	pop	r28
+ 4e4:	0f 91       	pop	r16
+ 4e6:	ef 90       	pop	r14
+ 4e8:	cf 90       	pop	r12
+ 4ea:	af 90       	pop	r10
+ 4ec:	8f 90       	pop	r8
+ 4ee:	08 95       	ret
+
+000004f0 <main>:
+#define F_CPU 2000000UL
+
+void ebi_init(void);
+
+int main(void)
+{
+ 4f0:	1f 93       	push	r17
+ 4f2:	cf 93       	push	r28
+ 4f4:	df 93       	push	r29
+ 4f6:	cd b7       	in	r28, 0x3d	; 61
+ 4f8:	de b7       	in	r29, 0x3e	; 62
+ 4fa:	2e 97       	sbiw	r28, 0x0e	; 14
+ 4fc:	cd bf       	out	0x3d, r28	; 61
+ 4fe:	de bf       	out	0x3e, r29	; 62
+	uint8_t temp;
+	
+	ebi_init();
+ 500:	0e 94 c1 02 	call	0x582	; 0x582 <ebi_init>
+	
+	uint8_t *ioport;
+	ioport = 0x005000;
+ 504:	80 e0       	ldi	r24, 0x00	; 0
+ 506:	90 e5       	ldi	r25, 0x50	; 80
+ 508:	8c 83       	std	Y+4, r24	; 0x04
+ 50a:	9d 83       	std	Y+5, r25	; 0x05
+	
+    while(1)
+    {
+       temp = __far_mem_read(ioport);
+ 50c:	8c 81       	ldd	r24, Y+4	; 0x04
+ 50e:	9d 81       	ldd	r25, Y+5	; 0x05
+ 510:	aa 27       	eor	r26, r26
+ 512:	97 fd       	sbrc	r25, 7
+ 514:	a0 95       	com	r26
+ 516:	ba 2f       	mov	r27, r26
+ 518:	8e 83       	std	Y+6, r24	; 0x06
+ 51a:	9f 83       	std	Y+7, r25	; 0x07
+ 51c:	a8 87       	std	Y+8, r26	; 0x08
+ 51e:	b9 87       	std	Y+9, r27	; 0x09
+ 520:	8e 81       	ldd	r24, Y+6	; 0x06
+ 522:	9f 81       	ldd	r25, Y+7	; 0x07
+ 524:	a8 85       	ldd	r26, Y+8	; 0x08
+ 526:	b9 85       	ldd	r27, Y+9	; 0x09
+ 528:	0b b6       	in	r0, 0x3b	; 59
+ 52a:	ab bf       	out	0x3b, r26	; 59
+ 52c:	fc 01       	movw	r30, r24
+ 52e:	10 81       	ld	r17, Z
+ 530:	0b be       	out	0x3b, r0	; 59
+ 532:	1a 87       	std	Y+10, r17	; 0x0a
+ 534:	8a 85       	ldd	r24, Y+10	; 0x0a
+ 536:	89 83       	std	Y+1, r24	; 0x01
+		
+		for (int i = 0; i < 8; i++)
+ 538:	1a 82       	std	Y+2, r1	; 0x02
+ 53a:	1b 82       	std	Y+3, r1	; 0x03
+ 53c:	1c c0       	rjmp	.+56     	; 0x576 <main+0x86>
+		{
+			temp = ~temp;
+ 53e:	89 81       	ldd	r24, Y+1	; 0x01
+ 540:	80 95       	com	r24
+ 542:	89 83       	std	Y+1, r24	; 0x01
+			__far_mem_write(ioport, temp);
+ 544:	8c 81       	ldd	r24, Y+4	; 0x04
+ 546:	9d 81       	ldd	r25, Y+5	; 0x05
+ 548:	aa 27       	eor	r26, r26
+ 54a:	97 fd       	sbrc	r25, 7
+ 54c:	a0 95       	com	r26
+ 54e:	ba 2f       	mov	r27, r26
+ 550:	8b 87       	std	Y+11, r24	; 0x0b
+ 552:	9c 87       	std	Y+12, r25	; 0x0c
+ 554:	ad 87       	std	Y+13, r26	; 0x0d
+ 556:	be 87       	std	Y+14, r27	; 0x0e
+ 558:	8b 85       	ldd	r24, Y+11	; 0x0b
+ 55a:	9c 85       	ldd	r25, Y+12	; 0x0c
+ 55c:	ad 85       	ldd	r26, Y+13	; 0x0d
+ 55e:	be 85       	ldd	r27, Y+14	; 0x0e
+ 560:	29 81       	ldd	r18, Y+1	; 0x01
+ 562:	0b b6       	in	r0, 0x3b	; 59
+ 564:	ab bf       	out	0x3b, r26	; 59
+ 566:	fc 01       	movw	r30, r24
+ 568:	20 83       	st	Z, r18
+ 56a:	0b be       	out	0x3b, r0	; 59
+	
+    while(1)
+    {
+       temp = __far_mem_read(ioport);
+		
+		for (int i = 0; i < 8; i++)
+ 56c:	8a 81       	ldd	r24, Y+2	; 0x02
+ 56e:	9b 81       	ldd	r25, Y+3	; 0x03
+ 570:	01 96       	adiw	r24, 0x01	; 1
+ 572:	8a 83       	std	Y+2, r24	; 0x02
+ 574:	9b 83       	std	Y+3, r25	; 0x03
+ 576:	8a 81       	ldd	r24, Y+2	; 0x02
+ 578:	9b 81       	ldd	r25, Y+3	; 0x03
+ 57a:	88 30       	cpi	r24, 0x08	; 8
+ 57c:	91 05       	cpc	r25, r1
+ 57e:	fc f2       	brlt	.-66     	; 0x53e <main+0x4e>
+		{
+			temp = ~temp;
+			__far_mem_write(ioport, temp);
+			//_delay_ms(500);
+		}			
+    }
+ 580:	c5 cf       	rjmp	.-118    	; 0x50c <main+0x1c>
+
+00000582 <ebi_init>:
+}
+
+void ebi_init(void)
+{
+ 582:	0f 93       	push	r16
+ 584:	cf 93       	push	r28
+ 586:	df 93       	push	r29
+ 588:	cd b7       	in	r28, 0x3d	; 61
+ 58a:	de b7       	in	r29, 0x3e	; 62
+	EBI_Enable(0,0,0,EBI_IFMODE_3PORT_gc);
+ 58c:	80 e0       	ldi	r24, 0x00	; 0
+ 58e:	60 e0       	ldi	r22, 0x00	; 0
+ 590:	40 e0       	ldi	r20, 0x00	; 0
+ 592:	21 e0       	ldi	r18, 0x01	; 1
+ 594:	0e 94 25 01 	call	0x24a	; 0x24a <EBI_Enable>
+	EBI_EnableSRAM(&EBI.CS0,EBI_CS_ASPACE_4KB_gc,0x5000,0);
+ 598:	80 e5       	ldi	r24, 0x50	; 80
+ 59a:	94 e0       	ldi	r25, 0x04	; 4
+ 59c:	60 e1       	ldi	r22, 0x10	; 16
+ 59e:	20 e0       	ldi	r18, 0x00	; 0
+ 5a0:	30 e5       	ldi	r19, 0x50	; 80
+ 5a2:	40 e0       	ldi	r20, 0x00	; 0
+ 5a4:	50 e0       	ldi	r21, 0x00	; 0
+ 5a6:	00 e0       	ldi	r16, 0x00	; 0
+ 5a8:	0e 94 40 01 	call	0x280	; 0x280 <EBI_EnableSRAM>
+}
+ 5ac:	df 91       	pop	r29
+ 5ae:	cf 91       	pop	r28
+ 5b0:	0f 91       	pop	r16
+ 5b2:	08 95       	ret
+
+000005b4 <_exit>:
+ 5b4:	f8 94       	cli
+
+000005b6 <__stop_program>:
+ 5b6:	ff cf       	rjmp	.-2      	; 0x5b6 <__stop_program>

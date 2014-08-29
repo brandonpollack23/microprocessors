@@ -1,0 +1,420 @@
+
+Lab2_c_part1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000304  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .stab         00000714  00000000  00000000  00000358  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  2 .stabstr      00000085  00000000  00000000  00000a6c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_aranges 00000088  00000000  00000000  00000af8  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   0000070e  00000000  00000000  00000b80  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 00000204  00000000  00000000  0000128e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   00000401  00000000  00000000  00001492  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  00000064  00000000  00000000  00001894  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    00000217  00000000  00000000  000018f8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    000001f7  00000000  00000000  00001b0f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000018  00000000  00000000  00001d06  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 fe 00 	jmp	0x1fc	; 0x1fc <__ctors_end>
+   4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+   8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+   c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  10:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  14:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  18:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  1c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  20:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  24:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  28:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  2c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  30:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  34:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  38:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  3c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  40:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  44:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  48:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  4c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  50:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  54:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  58:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  5c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  60:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  64:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  68:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  6c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  70:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  74:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  78:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  7c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  80:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  84:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  88:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  8c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  90:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  94:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  98:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  9c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  a0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  a4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  a8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  ac:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  b0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  b4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  b8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  bc:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  c0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  c4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  c8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  cc:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  d0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  d4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  d8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  dc:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  e0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  e4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  e8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  ec:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  f0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  f4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  f8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+  fc:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 100:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 104:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 108:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 10c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 110:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 114:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 118:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 11c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 120:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 124:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 128:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 12c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 130:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 134:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 138:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 13c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 140:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 144:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 148:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 14c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 150:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 154:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 158:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 15c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 160:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 164:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 168:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 16c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 170:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 174:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 178:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 17c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 180:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 184:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 188:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 18c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 190:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 194:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 198:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 19c:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1a0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1a4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1a8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1ac:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1b0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1b4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1b8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1bc:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1c0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1c4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1c8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1cc:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1d0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1d4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1d8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1dc:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1e0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1e4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1e8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1ec:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1f0:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1f4:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+ 1f8:	0c 94 23 01 	jmp	0x246	; 0x246 <__bad_interrupt>
+
+000001fc <__ctors_end>:
+ 1fc:	11 24       	eor	r1, r1
+ 1fe:	1f be       	out	0x3f, r1	; 63
+ 200:	cf ef       	ldi	r28, 0xFF	; 255
+ 202:	df e3       	ldi	r29, 0x3F	; 63
+ 204:	de bf       	out	0x3e, r29	; 62
+ 206:	cd bf       	out	0x3d, r28	; 61
+ 208:	00 e0       	ldi	r16, 0x00	; 0
+ 20a:	0c bf       	out	0x3c, r16	; 60
+ 20c:	18 be       	out	0x38, r1	; 56
+ 20e:	19 be       	out	0x39, r1	; 57
+ 210:	1a be       	out	0x3a, r1	; 58
+ 212:	1b be       	out	0x3b, r1	; 59
+
+00000214 <__do_copy_data>:
+ 214:	10 e2       	ldi	r17, 0x20	; 32
+ 216:	a0 e0       	ldi	r26, 0x00	; 0
+ 218:	b0 e2       	ldi	r27, 0x20	; 32
+ 21a:	e4 e0       	ldi	r30, 0x04	; 4
+ 21c:	f3 e0       	ldi	r31, 0x03	; 3
+ 21e:	00 e0       	ldi	r16, 0x00	; 0
+ 220:	0b bf       	out	0x3b, r16	; 59
+ 222:	02 c0       	rjmp	.+4      	; 0x228 <__do_copy_data+0x14>
+ 224:	07 90       	elpm	r0, Z+
+ 226:	0d 92       	st	X+, r0
+ 228:	a0 30       	cpi	r26, 0x00	; 0
+ 22a:	b1 07       	cpc	r27, r17
+ 22c:	d9 f7       	brne	.-10     	; 0x224 <__do_copy_data+0x10>
+
+0000022e <__do_clear_bss>:
+ 22e:	10 e2       	ldi	r17, 0x20	; 32
+ 230:	a0 e0       	ldi	r26, 0x00	; 0
+ 232:	b0 e2       	ldi	r27, 0x20	; 32
+ 234:	01 c0       	rjmp	.+2      	; 0x238 <.do_clear_bss_start>
+
+00000236 <.do_clear_bss_loop>:
+ 236:	1d 92       	st	X+, r1
+
+00000238 <.do_clear_bss_start>:
+ 238:	a0 30       	cpi	r26, 0x00	; 0
+ 23a:	b1 07       	cpc	r27, r17
+ 23c:	e1 f7       	brne	.-8      	; 0x236 <.do_clear_bss_loop>
+ 23e:	0e 94 42 01 	call	0x284	; 0x284 <main>
+ 242:	0c 94 80 01 	jmp	0x300	; 0x300 <_exit>
+
+00000246 <__bad_interrupt>:
+ 246:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000024a <getPort>:
+#define halfsecond 500
+#define second 1000
+
+uint8_t getPort(PORT_t *port)
+{
+	return port->IN;
+ 24a:	fc 01       	movw	r30, r24
+ 24c:	80 85       	ldd	r24, Z+8	; 0x08
+}
+ 24e:	08 95       	ret
+
+00000250 <setPort>:
+
+void setPort(PORT_t *port, uint8_t out)
+{
+ 250:	fc 01       	movw	r30, r24
+	port->DIRSET = out;
+ 252:	61 83       	std	Z+1, r22	; 0x01
+	port->OUT = out;
+ 254:	64 83       	std	Z+4, r22	; 0x04
+}
+ 256:	08 95       	ret
+
+00000258 <delay>:
+
+void delay(uint8_t *switches)
+{
+	if ((*switches & PIN3_bm) == PIN3_bm)
+ 258:	dc 01       	movw	r26, r24
+ 25a:	8c 91       	ld	r24, X
+ 25c:	83 ff       	sbrs	r24, 3
+ 25e:	08 c0       	rjmp	.+16     	; 0x270 <delay+0x18>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 260:	8f e9       	ldi	r24, 0x9F	; 159
+ 262:	96 e8       	ldi	r25, 0x86	; 134
+ 264:	a1 e0       	ldi	r26, 0x01	; 1
+ 266:	81 50       	subi	r24, 0x01	; 1
+ 268:	90 40       	sbci	r25, 0x00	; 0
+ 26a:	a0 40       	sbci	r26, 0x00	; 0
+ 26c:	e1 f7       	brne	.-8      	; 0x266 <delay+0xe>
+ 26e:	07 c0       	rjmp	.+14     	; 0x27e <delay+0x26>
+ 270:	8f e3       	ldi	r24, 0x3F	; 63
+ 272:	9d e0       	ldi	r25, 0x0D	; 13
+ 274:	a3 e0       	ldi	r26, 0x03	; 3
+ 276:	81 50       	subi	r24, 0x01	; 1
+ 278:	90 40       	sbci	r25, 0x00	; 0
+ 27a:	a0 40       	sbci	r26, 0x00	; 0
+ 27c:	e1 f7       	brne	.-8      	; 0x276 <delay+0x1e>
+ 27e:	00 c0       	rjmp	.+0      	; 0x280 <delay+0x28>
+ 280:	00 00       	nop
+ 282:	08 95       	ret
+
+00000284 <main>:
+	}
+	else _delay_ms(second);
+}
+
+int main(void)
+{
+ 284:	cf 93       	push	r28
+ 286:	df 93       	push	r29
+ 288:	0f 92       	push	r0
+ 28a:	0f 92       	push	r0
+ 28c:	cd b7       	in	r28, 0x3d	; 61
+ 28e:	de b7       	in	r29, 0x3e	; 62
+	PORT_t *ledport = &PORTE;
+	PORT_t *switchport = &PORTD;
+	ledport->DIR = 0xFF;
+ 290:	8f ef       	ldi	r24, 0xFF	; 255
+ 292:	80 93 80 06 	sts	0x0680, r24
+	switchport->DIRCLR = PIN5_bm | PIN3_bm;
+ 296:	88 e2       	ldi	r24, 0x28	; 40
+ 298:	e0 e6       	ldi	r30, 0x60	; 96
+ 29a:	f6 e0       	ldi	r31, 0x06	; 6
+ 29c:	82 83       	std	Z+2, r24	; 0x02
+	while(1)
+	{
+		switches = getPort(switchport);
+		if ((switches & PIN5_bm) == PIN5_bm)
+		{
+			temp = ledport->OUT;
+ 29e:	00 e8       	ldi	r16, 0x80	; 128
+ 2a0:	16 e0       	ldi	r17, 0x06	; 6
+			setPort(ledport, temp);
+			delay(&switches);
+		}
+		else
+		{
+			temp = 1;
+ 2a2:	ff 24       	eor	r15, r15
+ 2a4:	f3 94       	inc	r15
+#define halfsecond 500
+#define second 1000
+
+uint8_t getPort(PORT_t *port)
+{
+	return port->IN;
+ 2a6:	80 91 68 06 	lds	r24, 0x0668
+	volatile uint8_t switches;
+	volatile uint8_t temp;
+	
+	while(1)
+	{
+		switches = getPort(switchport);
+ 2aa:	8a 83       	std	Y+2, r24	; 0x02
+		if ((switches & PIN5_bm) == PIN5_bm)
+ 2ac:	8a 81       	ldd	r24, Y+2	; 0x02
+ 2ae:	85 ff       	sbrs	r24, 5
+ 2b0:	0f c0       	rjmp	.+30     	; 0x2d0 <main+0x4c>
+		{
+			temp = ledport->OUT;
+ 2b2:	80 91 84 06 	lds	r24, 0x0684
+ 2b6:	89 83       	std	Y+1, r24	; 0x01
+			temp++;
+ 2b8:	89 81       	ldd	r24, Y+1	; 0x01
+ 2ba:	8f 5f       	subi	r24, 0xFF	; 255
+ 2bc:	89 83       	std	Y+1, r24	; 0x01
+			setPort(ledport, temp);
+ 2be:	89 81       	ldd	r24, Y+1	; 0x01
+	return port->IN;
+}
+
+void setPort(PORT_t *port, uint8_t out)
+{
+	port->DIRSET = out;
+ 2c0:	f8 01       	movw	r30, r16
+ 2c2:	81 83       	std	Z+1, r24	; 0x01
+	port->OUT = out;
+ 2c4:	84 83       	std	Z+4, r24	; 0x04
+		if ((switches & PIN5_bm) == PIN5_bm)
+		{
+			temp = ledport->OUT;
+			temp++;
+			setPort(ledport, temp);
+			delay(&switches);
+ 2c6:	ce 01       	movw	r24, r28
+ 2c8:	02 96       	adiw	r24, 0x02	; 2
+ 2ca:	0e 94 2c 01 	call	0x258	; 0x258 <delay>
+ 2ce:	eb cf       	rjmp	.-42     	; 0x2a6 <main+0x22>
+		}
+		else
+		{
+			temp = 1;
+ 2d0:	f9 82       	std	Y+1, r15	; 0x01
+			while(!((switches & PIN5_bm) == PIN5_bm))
+ 2d2:	12 c0       	rjmp	.+36     	; 0x2f8 <main+0x74>
+			{
+				setPort(ledport, temp);
+ 2d4:	89 81       	ldd	r24, Y+1	; 0x01
+	return port->IN;
+}
+
+void setPort(PORT_t *port, uint8_t out)
+{
+	port->DIRSET = out;
+ 2d6:	f8 01       	movw	r30, r16
+ 2d8:	81 83       	std	Z+1, r24	; 0x01
+	port->OUT = out;
+ 2da:	84 83       	std	Z+4, r24	; 0x04
+		{
+			temp = 1;
+			while(!((switches & PIN5_bm) == PIN5_bm))
+			{
+				setPort(ledport, temp);
+				temp <<= 1;
+ 2dc:	89 81       	ldd	r24, Y+1	; 0x01
+ 2de:	88 0f       	add	r24, r24
+ 2e0:	89 83       	std	Y+1, r24	; 0x01
+				if (temp == 0) temp = 1;
+ 2e2:	89 81       	ldd	r24, Y+1	; 0x01
+ 2e4:	88 23       	and	r24, r24
+ 2e6:	09 f4       	brne	.+2      	; 0x2ea <main+0x66>
+ 2e8:	f9 82       	std	Y+1, r15	; 0x01
+				delay(switches);
+ 2ea:	8a 81       	ldd	r24, Y+2	; 0x02
+ 2ec:	90 e0       	ldi	r25, 0x00	; 0
+ 2ee:	0e 94 2c 01 	call	0x258	; 0x258 <delay>
+#define halfsecond 500
+#define second 1000
+
+uint8_t getPort(PORT_t *port)
+{
+	return port->IN;
+ 2f2:	80 91 68 06 	lds	r24, 0x0668
+			{
+				setPort(ledport, temp);
+				temp <<= 1;
+				if (temp == 0) temp = 1;
+				delay(switches);
+				switches = getPort(switchport);			}
+ 2f6:	8a 83       	std	Y+2, r24	; 0x02
+			delay(&switches);
+		}
+		else
+		{
+			temp = 1;
+			while(!((switches & PIN5_bm) == PIN5_bm))
+ 2f8:	8a 81       	ldd	r24, Y+2	; 0x02
+ 2fa:	85 ff       	sbrs	r24, 5
+ 2fc:	eb cf       	rjmp	.-42     	; 0x2d4 <main+0x50>
+ 2fe:	d3 cf       	rjmp	.-90     	; 0x2a6 <main+0x22>
+
+00000300 <_exit>:
+ 300:	f8 94       	cli
+
+00000302 <__stop_program>:
+ 302:	ff cf       	rjmp	.-2      	; 0x302 <__stop_program>

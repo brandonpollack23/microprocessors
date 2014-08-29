@@ -1,0 +1,27 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.51</VERSION>
+ <DEVICE>"ATxmega128A1U"</DEVICE>
+ <WORKING_DIR>C:\Users\Brandon\Dropbox\school\microp\labs\Lab7_part1_BRP\Lab7_part1_BRP\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.46\AvrAssembler/Include</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab7_part1_BRP\Lab7_part1_BRP\Lab7_part1_BRP.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.46\AvrAssembler/Include\atxmega128a1udef.inc</FILE>
+  <FILE>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.46\AvrAssembler/Include\Atxmega128a1udef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab7_part1_BRP\Lab7_part1_BRP\Debug/Lab7_part1_BRP.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab7_part1_BRP\Lab7_part1_BRP\Debug/Lab7_part1_BRP.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab7_part1_BRP\Lab7_part1_BRP\Debug\Lab7_part1_BRP.map</FILE>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab7_part1_BRP\Lab7_part1_BRP\Debug\Lab7_part1_BRP.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <main><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab7_part1_BRP\Lab7_part1_BRP\Lab7_part1_BRP.asm</FILE><LINE>15</LINE></main>
+  <done><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab7_part1_BRP\Lab7_part1_BRP\Lab7_part1_BRP.asm</FILE><LINE>34</LINE></done>
+ </LABELS>
+</ASSEMBLER_INFO>

@@ -1,0 +1,36 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.52</VERSION>
+ <DEVICE>"ATxmega128A1U"</DEVICE>
+ <WORKING_DIR>C:\Users\Brandon\Dropbox\school\microp\labs\lab4\LAB4_PART2_BRP\LAB4_PART2_BRP\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.64\AvrAssembler/Include</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab4\LAB4_PART2_BRP\LAB4_PART2_BRP\LAB4_PART2_BRP.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.64\AvrAssembler/Include\atxmega128a1udef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab4\LAB4_PART2_BRP\LAB4_PART2_BRP\Debug/LAB4_PART2_BRP.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab4\LAB4_PART2_BRP\LAB4_PART2_BRP\Debug/LAB4_PART2_BRP.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab4\LAB4_PART2_BRP\LAB4_PART2_BRP\Debug\LAB4_PART2_BRP.map</FILE>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab4\LAB4_PART2_BRP\LAB4_PART2_BRP\Debug\LAB4_PART2_BRP.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <MAIN><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab4\LAB4_PART2_BRP\LAB4_PART2_BRP\LAB4_PART2_BRP.asm</FILE><LINE>66</LINE></MAIN>
+  <LOOP><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab4\LAB4_PART2_BRP\LAB4_PART2_BRP\LAB4_PART2_BRP.asm</FILE><LINE>71</LINE></LOOP>
+  <NOWR1><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab4\LAB4_PART2_BRP\LAB4_PART2_BRP\LAB4_PART2_BRP.asm</FILE><LINE>77</LINE></NOWR1>
+  <donewriting><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab4\LAB4_PART2_BRP\LAB4_PART2_BRP\LAB4_PART2_BRP.asm</FILE><LINE>84</LINE></donewriting>
+  <READLOOP><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab4\LAB4_PART2_BRP\LAB4_PART2_BRP\LAB4_PART2_BRP.asm</FILE><LINE>93</LINE></READLOOP>
+  <somethingwentwrong><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab4\LAB4_PART2_BRP\LAB4_PART2_BRP\LAB4_PART2_BRP.asm</FILE><LINE>107</LINE></somethingwentwrong>
+  <nocarry><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab4\LAB4_PART2_BRP\LAB4_PART2_BRP\LAB4_PART2_BRP.asm</FILE><LINE>101</LINE></nocarry>
+  <end><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab4\LAB4_PART2_BRP\LAB4_PART2_BRP\LAB4_PART2_BRP.asm</FILE><LINE>150</LINE></end>
+  <badloop><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab4\LAB4_PART2_BRP\LAB4_PART2_BRP\LAB4_PART2_BRP.asm</FILE><LINE>111</LINE></badloop>
+  <nocarry2><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab4\LAB4_PART2_BRP\LAB4_PART2_BRP\LAB4_PART2_BRP.asm</FILE><LINE>116</LINE></nocarry2>
+  <nocarry3><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab4\LAB4_PART2_BRP\LAB4_PART2_BRP\LAB4_PART2_BRP.asm</FILE><LINE>135</LINE></nocarry3>
+  <nocarry4><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab4\LAB4_PART2_BRP\LAB4_PART2_BRP\LAB4_PART2_BRP.asm</FILE><LINE>144</LINE></nocarry4>
+ </LABELS>
+</ASSEMBLER_INFO>

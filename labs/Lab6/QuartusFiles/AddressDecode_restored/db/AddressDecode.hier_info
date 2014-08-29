@@ -1,0 +1,31 @@
+|AddressDecode
+READIO_L <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CS0_L => inst21.IN0
+CS0_L => inst4.IN0
+A13 => inst9.IN0
+A13 => inst13.IN0
+A14 => inst.IN1
+A14 => inst1.IN1
+A15 => inst8.IN0
+A15 => inst12.IN0
+R_L => inst10.IN0
+R_L => inst24.IN0
+A12 => inst.IN4
+A12 => inst1.IN4
+WRITEIO <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+W_L => inst14.IN0
+W_L => inst25.IN0
+SRAMENABLE_L <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+CS1_L => inst16.IN0
+A23 => inst5.IN0
+A21 => inst11.IN1
+A22 => inst6.IN0
+A20 => inst11.IN3
+A17 => inst11.IN4
+A18 => inst11.IN5
+A16 => inst11.IN6
+A19 => inst7.IN0
+LDC_E <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+CS2_L => inst18.IN0
+
+

@@ -1,0 +1,39 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.51</VERSION>
+ <DEVICE>"ATxmega128A1U"</DEVICE>
+ <WORKING_DIR>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\LAB2PARTTWO\LAB2PARTTWO\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.46\AvrAssembler/Include</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\LAB2PARTTWO\LAB2PARTTWO\LAB2PARTTWO.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.46\AvrAssembler/Include\atxmega128a1udef.inc</FILE>
+  <FILE>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.46\AvrAssembler/Include\ATxmega128A1Udef.inc</FILE>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\LAB2PARTTWO\LAB2PARTTWO\Delay500.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\LAB2PARTTWO\LAB2PARTTWO\Debug/LAB2PARTTWO.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\LAB2PARTTWO\LAB2PARTTWO\Debug/LAB2PARTTWO.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\LAB2PARTTWO\LAB2PARTTWO\Debug\LAB2PARTTWO.map</FILE>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\LAB2PARTTWO\LAB2PARTTWO\Debug\LAB2PARTTWO.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <DELAY500><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\LAB2PARTTWO\LAB2PARTTWO\Delay500.asm</FILE><LINE>11</LINE></DELAY500>
+  <AGAIN><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\LAB2PARTTWO\LAB2PARTTWO\Delay500.asm</FILE><LINE>16</LINE></AGAIN>
+  <CARRY><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\LAB2PARTTWO\LAB2PARTTWO\Delay500.asm</FILE><LINE>41</LINE></CARRY>
+  <BACK><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\LAB2PARTTWO\LAB2PARTTWO\Delay500.asm</FILE><LINE>36</LINE></BACK>
+  <RETURN><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\LAB2PARTTWO\LAB2PARTTWO\Delay500.asm</FILE><LINE>45</LINE></RETURN>
+  <MAIN><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\LAB2PARTTWO\LAB2PARTTWO\LAB2PARTTWO.asm</FILE><LINE>13</LINE></MAIN>
+  <LOOP><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\LAB2PARTTWO\LAB2PARTTWO\LAB2PARTTWO.asm</FILE><LINE>25</LINE></LOOP>
+  <NORESET><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\LAB2PARTTWO\LAB2PARTTWO\LAB2PARTTWO.asm</FILE><LINE>35</LINE></NORESET>
+  <INCPORTE><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\LAB2PARTTWO\LAB2PARTTWO\LAB2PARTTWO.asm</FILE><LINE>55</LINE></INCPORTE>
+  <SHIFTPORTE><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\LAB2PARTTWO\LAB2PARTTWO\LAB2PARTTWO.asm</FILE><LINE>43</LINE></SHIFTPORTE>
+  <NOCARRY><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\LAB2PARTTWO\LAB2PARTTWO\LAB2PARTTWO.asm</FILE><LINE>50</LINE></NOCARRY>
+  <SPEEDCHECK><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\LAB2PARTTWO\LAB2PARTTWO\LAB2PARTTWO.asm</FILE><LINE>61</LINE></SPEEDCHECK>
+  <HALFSEC><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab2\LAB2PARTTWO\LAB2PARTTWO\LAB2PARTTWO.asm</FILE><LINE>67</LINE></HALFSEC>
+ </LABELS>
+</ASSEMBLER_INFO>

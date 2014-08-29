@@ -1,0 +1,34 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.51</VERSION>
+ <DEVICE>"ATxmega128A1U"</DEVICE>
+ <WORKING_DIR>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\lcd address test\lcd address test\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.46\AvrAssembler/Include</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\lcd address test\lcd address test\lcd address test.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.46\AvrAssembler/Include\atxmega128a1udef.inc</FILE>
+  <FILE>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.46\AvrAssembler/Include\Atxmega128A1udef.inc</FILE>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\lcd address test\lcd address test\EBI_INITS.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\lcd address test\lcd address test\Debug/lcd address test.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\lcd address test\lcd address test\Debug/lcd address test.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\lcd address test\lcd address test\Debug\lcd address test.map</FILE>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\lcd address test\lcd address test\Debug\lcd address test.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <main><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\lcd address test\lcd address test\lcd address test.asm</FILE><LINE>27</LINE></main>
+  <jumphere><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\lcd address test\lcd address test\lcd address test.asm</FILE><LINE>36</LINE></jumphere>
+  <OUT_CHAR_LCD><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\lcd address test\lcd address test\lcd address test.asm</FILE><LINE>51</LINE></OUT_CHAR_LCD>
+  <LCD_BF_WAIT><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\lcd address test\lcd address test\lcd address test.asm</FILE><LINE>74</LINE></LCD_BF_WAIT>
+  <OUT_STRING_LCD><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\lcd address test\lcd address test\lcd address test.asm</FILE><LINE>58</LINE></OUT_STRING_LCD>
+  <stringloop><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\lcd address test\lcd address test\lcd address test.asm</FILE><LINE>61</LINE></stringloop>
+  <string_done><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\lcd address test\lcd address test\lcd address test.asm</FILE><LINE>70</LINE></string_done>
+  <notready><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\Lab6\lcd address test\lcd address test\lcd address test.asm</FILE><LINE>80</LINE></notready>
+ </LABELS>
+</ASSEMBLER_INFO>

@@ -1,0 +1,269 @@
+
+GccApplication1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000f290  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .stab         00000714  00000000  00000000  0000f2e4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  2 .stabstr      00000085  00000000  00000000  0000f9f8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_aranges 00000080  00000000  00000000  0000fa80  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   000003fd  00000000  00000000  0000fb00  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 00000120  00000000  00000000  0000fefd  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   0000028c  00000000  00000000  0001001d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  00000024  00000000  00000000  000102ac  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    000000de  00000000  00000000  000102d0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    00000086  00000000  00000000  000103ae  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+       0:	0c 94 09 01 	jmp	0x212	; 0x212 <__ctors_end>
+       4:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+       8:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+       c:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      10:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      14:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      18:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      1c:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      20:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      24:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      28:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      2c:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      30:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      34:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      38:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      3c:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      40:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      44:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      48:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      4c:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      50:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      54:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      58:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      5c:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      60:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      64:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      68:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      6c:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      70:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      74:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      78:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      7c:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      80:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      84:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      88:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      8c:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      90:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      94:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      98:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      9c:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      a0:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      a4:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      a8:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      ac:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      b0:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      b4:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      b8:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      bc:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      c0:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      c4:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      c8:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      cc:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      d0:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      d4:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      d8:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      dc:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      e0:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      e4:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      e8:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      ec:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      f0:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      f4:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      f8:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+      fc:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     100:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     104:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     108:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     10c:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     110:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     114:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     118:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     11c:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     120:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     124:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     128:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     12c:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     130:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     134:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     138:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     13c:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     140:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     144:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     148:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     14c:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     150:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     154:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     158:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     15c:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     160:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     164:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     168:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     16c:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     170:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     174:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     178:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     17c:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     180:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     184:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     188:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     18c:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     190:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     194:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     198:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     19c:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1a0:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1a4:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1a8:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1ac:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1b0:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1b4:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1b8:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1bc:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1c0:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1c4:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1c8:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1cc:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1d0:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1d4:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1d8:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1dc:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1e0:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1e4:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1e8:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1ec:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1f0:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1f4:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+     1f8:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__bad_interrupt>
+
+000001fc <x>:
+     1fc:	34 7e 07 04 67 04 20 49 53 6f 6f 20 64 46 55 5f     4~..g. ISoo dFU_
+     20c:	4e 6a 6f 62 21 00                                   Njob!.
+
+00000212 <__ctors_end>:
+     212:	11 24       	eor	r1, r1
+     214:	1f be       	out	0x3f, r1	; 63
+     216:	cf ef       	ldi	r28, 0xFF	; 255
+     218:	df e3       	ldi	r29, 0x3F	; 63
+     21a:	de bf       	out	0x3e, r29	; 62
+     21c:	cd bf       	out	0x3d, r28	; 61
+     21e:	00 e0       	ldi	r16, 0x00	; 0
+     220:	0c bf       	out	0x3c, r16	; 60
+     222:	18 be       	out	0x38, r1	; 56
+     224:	19 be       	out	0x39, r1	; 57
+     226:	1a be       	out	0x3a, r1	; 58
+     228:	1b be       	out	0x3b, r1	; 59
+
+0000022a <__do_copy_data>:
+     22a:	10 e2       	ldi	r17, 0x20	; 32
+     22c:	a0 e0       	ldi	r26, 0x00	; 0
+     22e:	b0 e2       	ldi	r27, 0x20	; 32
+     230:	e0 e9       	ldi	r30, 0x90	; 144
+     232:	f2 ef       	ldi	r31, 0xF2	; 242
+     234:	00 e0       	ldi	r16, 0x00	; 0
+     236:	0b bf       	out	0x3b, r16	; 59
+     238:	02 c0       	rjmp	.+4      	; 0x23e <__do_copy_data+0x14>
+     23a:	07 90       	elpm	r0, Z+
+     23c:	0d 92       	st	X+, r0
+     23e:	a0 30       	cpi	r26, 0x00	; 0
+     240:	b1 07       	cpc	r27, r17
+     242:	d9 f7       	brne	.-10     	; 0x23a <__do_copy_data+0x10>
+
+00000244 <__do_clear_bss>:
+     244:	10 e2       	ldi	r17, 0x20	; 32
+     246:	a0 e0       	ldi	r26, 0x00	; 0
+     248:	b0 e2       	ldi	r27, 0x20	; 32
+     24a:	01 c0       	rjmp	.+2      	; 0x24e <.do_clear_bss_start>
+
+0000024c <.do_clear_bss_loop>:
+     24c:	1d 92       	st	X+, r1
+
+0000024e <.do_clear_bss_start>:
+     24e:	a0 30       	cpi	r26, 0x00	; 0
+     250:	b1 07       	cpc	r27, r17
+     252:	e1 f7       	brne	.-8      	; 0x24c <.do_clear_bss_loop>
+     254:	0e 94 30 79 	call	0xf260	; 0xf260 <main>
+     258:	0c 94 46 79 	jmp	0xf28c	; 0xf28c <_exit>
+
+0000025c <__bad_interrupt>:
+     25c:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+	...
+
+0000f260 <main>:
+int main(void)
+{
+	
+	uint8_t *answer = 0x2100;
+	uint8_t j = 0;
+    for (int i = 0; i < 21; i++)
+    f260:	80 e0       	ldi	r24, 0x00	; 0
+    f262:	90 e0       	ldi	r25, 0x00	; 0
+
+int main(void)
+{
+	
+	uint8_t *answer = 0x2100;
+	uint8_t j = 0;
+    f264:	20 e0       	ldi	r18, 0x00	; 0
+    for (int i = 0; i < 21; i++)
+	{
+		if (pgm_read_byte(&(x[i])) > 0x41)
+    f266:	fc 01       	movw	r30, r24
+    f268:	e4 50       	subi	r30, 0x04	; 4
+    f26a:	fe 4f       	sbci	r31, 0xFE	; 254
+    f26c:	34 91       	lpm	r19, Z
+    f26e:	32 34       	cpi	r19, 0x42	; 66
+    f270:	38 f0       	brcs	.+14     	; 0xf280 <main+0x20>
+		{
+			answer[j] = pgm_read_byte(&(x[i]));
+    f272:	e4 91       	lpm	r30, Z
+    f274:	a2 2f       	mov	r26, r18
+    f276:	b0 e0       	ldi	r27, 0x00	; 0
+    f278:	a0 50       	subi	r26, 0x00	; 0
+    f27a:	bf 4d       	sbci	r27, 0xDF	; 223
+    f27c:	ec 93       	st	X, r30
+			j++;
+    f27e:	2f 5f       	subi	r18, 0xFF	; 255
+int main(void)
+{
+	
+	uint8_t *answer = 0x2100;
+	uint8_t j = 0;
+    for (int i = 0; i < 21; i++)
+    f280:	01 96       	adiw	r24, 0x01	; 1
+    f282:	85 31       	cpi	r24, 0x15	; 21
+    f284:	91 05       	cpc	r25, r1
+    f286:	79 f7       	brne	.-34     	; 0xf266 <main+0x6>
+			j++;
+		}
+	}
+	while(1)
+	{
+		asm ("NOP");
+    f288:	00 00       	nop
+    f28a:	fe cf       	rjmp	.-4      	; 0xf288 <main+0x28>
+
+0000f28c <_exit>:
+    f28c:	f8 94       	cli
+
+0000f28e <__stop_program>:
+    f28e:	ff cf       	rjmp	.-2      	; 0xf28e <__stop_program>

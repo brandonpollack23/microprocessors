@@ -1,0 +1,19 @@
+set_location_assignment PIN_20 -to READIO_L
+set_location_assignment PIN_14 -to A15
+set_location_assignment PIN_19 -to A12
+set_location_assignment PIN_4 -to W_L
+set_location_assignment PIN_5 -to R_L
+set_location_assignment PIN_16 -to A14
+set_location_assignment PIN_18 -to A13
+set_location_assignment PIN_21 -to WRITEIO
+set_global_assignment -name FAMILY MAX3000A
+set_global_assignment -name DEVICE "EPM3064ALC44-10"
+set_global_assignment -name TOP_LEVEL_ENTITY AddressDecode
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:03:14  FEBRUARY 03, 2013"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name BDF_FILE AddressDecode.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE AddressDecode.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name MISC_FILE "C:/Users/Brandon/Dropbox/school/microp/labs/lab3/QuartusFiles/AddressDecode.dpf"
+set_global_assignment -name MISC_FILE "C:/Users/Brandon/Dropbox/school/microp/labs/lab4/QuartusFiles/AddressDecode.dpf"

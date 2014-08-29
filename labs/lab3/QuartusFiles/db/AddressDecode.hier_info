@@ -1,0 +1,15 @@
+|AddressDecode
+READIO_L <= inst.DB_MAX_OUTPUT_PORT_TYPE
+R_L => inst10.IN0
+A12 => inst.IN1
+A12 => inst11.IN1
+A13 => inst9.IN0
+A13 => inst13.IN0
+A14 => inst.IN3
+A14 => inst11.IN3
+A15 => inst8.IN0
+A15 => inst12.IN0
+WRITEIO <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+W_L => inst14.IN0
+
+

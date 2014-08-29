@@ -1,0 +1,35 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.51</VERSION>
+ <DEVICE>"ATxmega128A1U"</DEVICE>
+ <WORKING_DIR>C:\Users\Brandon\Dropbox\school\microp\labs\lab5\Lab5_part3\Lab5_part3\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.46\AvrAssembler/Include</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab5\Lab5_part3\Lab5_part3\Lab5_part3.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.46\AvrAssembler/Include\atxmega128a1udef.inc</FILE>
+  <FILE>C:\Program Files\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.46\AvrAssembler/Include\Atxmega128A1udef.inc</FILE>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab5\Lab5_part3\Lab5_part3\EBI_INITS.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab5\Lab5_part3\Lab5_part3\Debug/Lab5_part3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab5\Lab5_part3\Lab5_part3\Debug/Lab5_part3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab5\Lab5_part3\Lab5_part3\Debug\Lab5_part3.map</FILE>
+  <FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab5\Lab5_part3\Lab5_part3\Debug\Lab5_part3.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <main><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab5\Lab5_part3\Lab5_part3\Lab5_part3.asm</FILE><LINE>17</LINE></main>
+  <RX_ISR><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab5\Lab5_part3\Lab5_part3\Lab5_part3.asm</FILE><LINE>58</LINE></RX_ISR>
+  <loopforever><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab5\Lab5_part3\Lab5_part3\Lab5_part3.asm</FILE><LINE>53</LINE></loopforever>
+  <DELAY500><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab5\Lab5_part3\Lab5_part3\Lab5_part3.asm</FILE><LINE>72</LINE></DELAY500>
+  <isdatasent><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab5\Lab5_part3\Lab5_part3\Lab5_part3.asm</FILE><LINE>62</LINE></isdatasent>
+  <AGAIN><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab5\Lab5_part3\Lab5_part3\Lab5_part3.asm</FILE><LINE>79</LINE></AGAIN>
+  <CARRY><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab5\Lab5_part3\Lab5_part3\Lab5_part3.asm</FILE><LINE>104</LINE></CARRY>
+  <BACK><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab5\Lab5_part3\Lab5_part3\Lab5_part3.asm</FILE><LINE>99</LINE></BACK>
+  <RETURN><FILE>C:\Users\Brandon\Dropbox\school\microp\labs\lab5\Lab5_part3\Lab5_part3\Lab5_part3.asm</FILE><LINE>108</LINE></RETURN>
+ </LABELS>
+</ASSEMBLER_INFO>
